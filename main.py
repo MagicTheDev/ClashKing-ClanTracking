@@ -17,7 +17,7 @@ import pytz
 keys = []
 utc = pytz.utc
 
-from .clash import setup_coc, client
+from clash import setup_coc, client
 
 async def main(app):
     @app.on_event("startup")
