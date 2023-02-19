@@ -1,3 +1,4 @@
+import os
 
 import coc
 from uvicorn import Config, Server
@@ -42,7 +43,7 @@ async def main(app):
             await websocket.send_text(err.message)
             await websocket.close()
 
-    db_client = motor.motor_asyncio.AsyncIOMotorClient("mongodb+srv://expo:CKexpo_2022@legendstracker.t8dfl.mongodb.net/usafam?ssl=true&ssl_cert_reqs=CERT_NONE")
+    db_client = motor.motor_asyncio.AsyncIOMotorClient(os.environ.get("DB_LOGIN"))
     usafam = db_client.usafam
     clan_db = usafam.clans
 
