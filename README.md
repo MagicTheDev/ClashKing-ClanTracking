@@ -1,1 +1,1 @@
-# ClashKing---ClanTracking
+# ClashKing ClanTracking
