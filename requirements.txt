@@ -4,11 +4,9 @@ aiomultiprocess==0.9.0
 aioredis==2.0.1
 aiosignal==1.2.0
 anyio==3.6.1
-APScheduler==3.9.1
 async-timeout==4.0.2
 attrs==21.2.0
 Automat==20.2.0
-backports.zoneinfo==0.2.1
 beautifulsoup4==4.11.1
 Brotli==1.0.9
 cachetools==5.0.0
@@ -76,8 +74,6 @@ starlette==0.19.1
 tinydb==4.5.1
 tornado==6.1
 treq==22.2.0
-Twisted==22.8.0
-twisted-iocpsupport==1.0.2
 typing-extensions==3.10.0.2
 tzdata==2022.2
 tzlocal==4.2
