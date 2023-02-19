@@ -1,0 +1,5 @@
+version: '2'
+services:
+    main:
+        container_name: 'ClanTracking'
+        image: docker.pkg.github.com/magicthedev/clashking-clantracking
