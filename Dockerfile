@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.8
 RUN mkdir -p /bot
 WORKDIR bot
 COPY ./requirements.txt /bot/requirements.txt
