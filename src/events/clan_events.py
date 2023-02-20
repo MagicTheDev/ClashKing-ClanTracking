@@ -1,4 +1,6 @@
 import coc
+import sys
+sys.path.append("..")
 import settings
 import asyncio
 
