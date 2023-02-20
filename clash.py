@@ -1,12 +1,12 @@
 import coc
 import os
 
-client = coc.EventsClient(key_names="Test", raw_attribute=True)
+import dotenv
+dotenv.load_dotenv()
+clash_client = coc.EventsClient(key_names="Test", raw_attribute=True, throttle_limit=30, key_count=10)
 
 async def setup_coc():
-    print(os.getenv("EMAIL"))
     try:
-        await client.login(email=os.getenv("EMAIL"), password=os.getenv("EMAIL_PW"))
+        await clash_client.login(email=os.getenv("EMAIL"), password=os.getenv("EMAIL_PW"))
     except Exception as exc:
-        print(f"Failed to setup clash api connection. Exiting! {exc}")
         exit(1)
