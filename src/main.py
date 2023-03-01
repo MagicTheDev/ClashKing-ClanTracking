@@ -61,7 +61,7 @@ loop = asyncio.get_event_loop()
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
-config = Config(app=app, loop="asyncio",host= "85.10.200.219", port=8080, ws_ping_interval=3600, ws_ping_timeout=3600, timeout_keep_alive=3600, timeout_notify=3600)
+config = Config(app=app, loop="asyncio",host= "85.10.200.219", port=60123, ws_ping_interval=3600, ws_ping_timeout=3600, timeout_keep_alive=3600, timeout_notify=3600)
 server = Server(config)
 loop.create_task(server.serve())
 loop.run_forever()
