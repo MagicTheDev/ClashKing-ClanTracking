@@ -13,7 +13,7 @@ import pytz
 from clash import setup_coc, clash_client
 from events import clan_events
 from events import war_events
-from events import raid_events
+#from events import raid_events
 import sockets
 
 utc = pytz.utc
@@ -21,7 +21,7 @@ app = FastAPI()
 
 app.add_api_websocket_route("/clans", endpoint=sockets.clan_websocket)
 app.add_api_websocket_route("/wars", endpoint=sockets.war_websocket)
-app.add_api_websocket_route("/raids", endpoint=sockets.raid_websocket)
+#app.add_api_websocket_route("/raids", endpoint=sockets.raid_websocket)
 
 @app.on_event("startup")
 async def startup_event():
@@ -54,7 +54,7 @@ async def start(iter_spot):
 #add events
 clash_client.add_events(start, clan_events.member_join, clan_events.member_leave, clan_events.member_donos, clan_events.member_received)
 clash_client.add_events(war_events.new_war, war_events.war_attack)
-clash_client.add_events(raid_events.raid_attack, raid_events.new_opponent)
+#clash_client.add_events(raid_events.raid_attack, raid_events.new_opponent)
 
 
 loop = asyncio.get_event_loop()
