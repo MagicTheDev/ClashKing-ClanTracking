@@ -48,7 +48,7 @@ async def start(iter_spot):
         #clan_tags = list(set(clan_tags + db_tags))
         clash_client.add_clan_updates(*clan_tags)
         clash_client.add_war_updates(*clan_tags)
-        clash_client.add_raid_updates(*clan_tags)
+        #clash_client.add_raid_updates(*clan_tags)
 
 
 #add events
