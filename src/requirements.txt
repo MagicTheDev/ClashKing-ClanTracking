@@ -16,7 +16,7 @@ cffi==1.15.1
 chardet==4.0.0
 charset-normalizer==2.1.1
 click==8.0.3
-coc.py @ git+https://github.com/MagicTheDev/coc.py.git@9fc14fe3c0e71ffe7d7d9bc73523356307ff8999
+git+https://github.com/MagicTheDev/coc.py.git
 colorama==0.4.4
 constantly==15.1.0
 cryptography==38.0.1
