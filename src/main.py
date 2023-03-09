@@ -52,7 +52,7 @@ async def start(iter_spot):
 
 
 #add events
-clash_client.add_events(start, clan_events.member_join, clan_events.member_leave, clan_events.member_donos, clan_events.member_received)
+clash_client.add_events(start, clan_events.member_join, clan_events.member_leave, clan_events.member_donos)
 clash_client.add_events(war_events.new_war, war_events.war_attack)
 #clash_client.add_events(raid_events.raid_attack, raid_events.new_opponent)
 
