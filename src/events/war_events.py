@@ -17,7 +17,7 @@ async def new_war(new_war: coc.ClanWar):
                 pass
 
     league_group = None
-    if new_war.is_cwl:
+    if new_war.is_cwl and league_group is not None:
         league_group: coc.ClanWarLeagueGroup = new_war.league_group
         league_group = league_group._raw_data
 
